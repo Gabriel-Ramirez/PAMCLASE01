@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clase001A</string>
+    <string name="lblNombre">Nombre</string>
+    <string name="lblApellido">Apellido</string>
+    <string name="lblEdad">Edad</string>
+    <string name="lblCorreo">Correo</string>
+    <string name="lblEnviar">Registar</string>
+</resources>
