@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 Bundle datos = new Bundle();
                 datos.putString("NOMBRE",txtNombre.getText().toString());
                 datos.putString("APELLIDO",txtApellido.getText().toString());
+                datos.putString("EDAD", txtEdad.getText().toString());
+                datos.putString("CORREO", txtCorreo.getText().toString());
                 abrirRegistro.putExtras(datos);
                 startActivity(abrirRegistro);
             }

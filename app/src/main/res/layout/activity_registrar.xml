@@ -13,4 +13,15 @@
         android:text="@string/lblNombre"
         />
 
+    <TextView android:id="@+id/lblEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblEdad"/>
+
+    <TextView android:id="@+id/lblCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCorreo"/>
+
+
 </LinearLayout>

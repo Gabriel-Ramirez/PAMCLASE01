@@ -8,8 +8,8 @@ import android.widget.TextView;
 public class Registrar extends AppCompatActivity {
 
     private TextView txtRegistro;
-
-    private EditText txtNombre;
+    private TextView txtEdad;
+    private TextView txtCorreo;
 
 
     @Override
@@ -23,6 +23,14 @@ public class Registrar extends AppCompatActivity {
 
         txtRegistro.setText("Nombre: " + datosPersona.getString("NOMBRE")
                 + " " + datosPersona.getString("APELLIDO"));
+
+        txtEdad = (TextView)findViewById(R.id.lblEdad);
+
+        txtEdad.setText("Edad: "+datosPersona.getString("EDAD"));
+
+        txtCorreo = (TextView)findViewById(R.id.lblCorreo);
+
+        txtCorreo.setText("Correo: "+ datosPersona.getString("CORREO"));
 
 
     }
