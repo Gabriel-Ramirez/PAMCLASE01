@@ -10,6 +10,7 @@ public class Registrar extends AppCompatActivity {
     private TextView txtRegistro;
     private TextView txtEdad;
     private TextView txtCorreo;
+    private EditText edtNombre;
 
 
     @Override
@@ -31,6 +32,10 @@ public class Registrar extends AppCompatActivity {
         txtCorreo = (TextView)findViewById(R.id.lblCorreo);
 
         txtCorreo.setText("Correo: "+ datosPersona.getString("CORREO"));
+
+        edtNombre = (EditText)findViewById(R.id.etxNombre);
+
+        edtNombre.setText(datosPersona.getString("NOMBRE")+" "+datosPersona.getString("APELLIDO"));
 
 
     }
