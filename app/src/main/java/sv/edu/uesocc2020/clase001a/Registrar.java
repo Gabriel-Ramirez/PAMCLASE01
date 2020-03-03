@@ -11,6 +11,9 @@ public class Registrar extends AppCompatActivity {
     private TextView txtEdad;
     private TextView txtCorreo;
     private EditText edtNombre;
+    private EditText edtApellido;
+    private EditText edtEdad;
+    private EditText edtCorreo;
 
 
     @Override
@@ -21,21 +24,30 @@ public class Registrar extends AppCompatActivity {
         txtRegistro = (TextView)findViewById(R.id.lblRegistroUsuario);
 
         Bundle datosPersona = this.getIntent().getExtras();
+        edtNombre = (EditText)findViewById(R.id.etxNombre);
+        edtNombre.setText(datosPersona.getString("NOMBRE"));
 
-        txtRegistro.setText("Nombre: " + datosPersona.getString("NOMBRE")
-                + " " + datosPersona.getString("APELLIDO"));
+        edtApellido = (EditText)findViewById(R.id.etxApellido);
+        edtApellido.setText(datosPersona.getString("APELLIDO"));
+
+        edtEdad = (EditText)findViewById(R.id.etxEdad);
+        edtEdad.setText(datosPersona.getString("EDAD"));
+
+        edtCorreo = (EditText)findViewById(R.id.etxCorreo);
+        edtCorreo.setText(datosPersona.getString("CORREO"));
+
+//        txtRegistro.setText("Nombre: " + datosPersona.getString("NOMBRE")
+//                + " " + datosPersona.getString("APELLIDO"));
 
         txtEdad = (TextView)findViewById(R.id.lblEdad);
 
-        txtEdad.setText("Edad: "+datosPersona.getString("EDAD"));
+//        txtEdad.setText("Edad: "+datosPersona.getString("EDAD"));
 
         txtCorreo = (TextView)findViewById(R.id.lblCorreo);
 
-        txtCorreo.setText("Correo: "+ datosPersona.getString("CORREO"));
+//        txtCorreo.setText("Correo: "+ datosPersona.getString("CORREO"));
 
-        edtNombre = (EditText)findViewById(R.id.etxNombre);
 
-        edtNombre.setText(datosPersona.getString("NOMBRE")+" "+datosPersona.getString("APELLIDO"));
 
 
     }

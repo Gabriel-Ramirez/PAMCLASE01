@@ -13,19 +13,36 @@
         android:text="@string/lblNombre"
         />
 
+    <EditText android:id="@+id/etxNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblApellido"/>
+
+    <EditText android:id="@+id/etxApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TextView android:id="@+id/lblEdad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblEdad"/>
+
+    <EditText android:id="@+id/etxEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView android:id="@+id/lblCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblCorreo"/>
 
-
-    <EditText android:id="@+id/etxNombre"
+    <EditText android:id="@+id/etxCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
